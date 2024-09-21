@@ -3,7 +3,7 @@ import './App.css'
 import Search from './assets/search.png'
 import MovieCard from './MovieCard'
 
-const API_URL = 'https://omdbapi.com/?apikey=5cdc3843'
+const API_URL = 'https://omdbapi.com/?apikey=${import.meta.env.VITE_API_KEY}'
 
 function App() {
   const [movies, setMovies] = useState([])
